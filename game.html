@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+        <script src="/base64ArrayBuffer.js"></script>
+        <script src="/ntp.js"></script>
+        <script src="/game.js"></script>
+        <style>
+.column {
+    float: left;
+    padding: 5px;
+}
+
+img {
+    border: 1px solid black;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+        </style>
+    </head>
+    <body>
+        <p id="game_id"></p>
+        <div class="row" id="first_row">
+            <img class="column" id="slide_image" src="https://dummyimage.com/600x400/000/fff.png&text=Loading..." style="width: 70%;"></img>
+            <div class="column" id="right_column">
+                <div id="reset_button_div">
+                </div>
+                <div id="fire_container">
+                </div>
+                <div id="raised_hands">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="players">
+
+        </div>
+    </body>
+</html>

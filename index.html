@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="/join.js"></script>
+    </head>
+    <body>
+        <h1>Criar Quiz</h1>
+        Arquivo PDF: <input type="file" id="presentation_file" accept="application/pdf" />
+        <br />
+        <button onclick="create_quiz();" id="join_button">Criar quiz</button>
+
+        <hr />
+
+        <h1>Entrar em Quiz</h1>
+        <input type="text" id="player_name" placeholder="Seu nome" />
+        <br />
+        <input type="text" id="game_id" placeholder="ID do jogo" />
+        <br />
+        <button onclick="join_quiz();">Entrar no quiz</button>
+    </body>
+</html>
